@@ -1,0 +1,241 @@
+*{
+box-sizing: border-box;
+margin: 20px;
+padding: 0 ;
+}
+body{
+    
+    background-image: url("images/modern-office-interior.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh -80px);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0;
+    width: 100%;
+    background: #000;
+    transition: all .50s ease;
+    height: 50px;
+}
+.title h1{
+    color: chartreuse;
+    font-size: 18px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+   
+}
+.navbar li{
+    display: flex;
+    
+
+}
+.navbar a{
+    color: #fff;
+   font-size: 1.1rem;
+    transition: all .50s ease;
+    font-weight: 500;
+    padding: 5px 0;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color:chartreuse ;
+}
+.navbar a.active{
+    color: chartreuse;
+}
+.main{
+    list-style: none;
+    display: flex;
+    color: #fff;
+    transition: all .50s ease;
+}
+.main a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+}
+.main a:hover{
+    color: chartreuse;
+}
+section{
+    background-image: url("images/modern-office-interior.jpg");
+}
+@media( max-width: 1024px){
+    .title h1{
+        font-size: 15px;
+    }
+    .navbar{
+        font-size: -50%;
+    }
+    .header{
+        padding: 5px;
+        transition: 2s;
+    }
+    .navbar a{
+        font-size: .8rem;
+    }
+    .navbar a:hover{
+        color: chartreuse;
+    }
+    .main img{
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .navbar{
+        display: flex;
+        padding: 0%;
+        right: -100%;
+        top: 30px;
+        background: #000;
+        position: absolute;
+        height: 250px;
+        width: 150px;
+        transition: all .20s ease;
+        justify-content: flex-start;
+        border-radius: 10px;
+        flex-direction: column;
+        margin-top: 100px;
+
+    }
+    .main img{
+        display: block;
+        width: 20px;
+        background: chartreuse;
+    }
+    .navbar a{
+        color: #fff;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        transform: translateY(5px);
+        padding: 0;
+    }
+    .navbar a:hover{
+        color: #333;
+        transition: 1s;
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color: white;
+    }
+    .navbar.open{
+        right:2% ;
+    }
+}
+section{
+    background-image: url("images/modern-office-interior.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    height:580 px;
+    width: 500px;
+    left: 200px;
+    background: #333;
+    border-radius: 10px;
+
+}
+#form{
+    display: flex;
+    align-items: center;
+    top: 100px;
+    left: 50%;
+    left: 300px;
+}
+.login{
+    justify-content: flex-end;
+    margin: 20px 30px;
+    display: block;
+    text-align: center;
+}
+.login h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+.login h1::after{
+    color: red;
+    height: 5px;
+    top: -50%;
+}
+
+.login label{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 100;
+    
+}
+.login input{
+    padding: 10px;
+    background: lightsteelblue;
+    border-radius: 10px;
+    outline: none;
+}
+.login button{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+.login button:hover{
+    color: #333;
+    background: #333;
+}
+.regester{
+    display: block;
+    background: transparent;
+    justify-content: flex-end;
+    margin: 20px 20px;
+    margin-bottom: 30px;
+}
+.regester h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    left: -50%;
+    align-items: center;
+    position: center;
+
+}
+.regester h1::after{
+    color: #ff0000;
+    height: 5px;
+    align-items: center;
+}
+.regester label{
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+}
+.regester input{
+    background: lightsteelblue;
+    border-radius: 10px;
+    padding: 8px;
+}
+hr{
+    bottom: 100%;
+}
+.regester button{
+    width: 55px;
+    height: 30px;
+    color: #000;
+    border-radius: 10px;
+    left: 50%;
+
+}
